@@ -2,7 +2,7 @@
   <demo-block :vue-code="code" :html-code="htmlCode">
     <template slot="preview">
       <model-fbx :backgroundAlpha="0" @on-load="onLoad" @on-error="onError"
-                 src="static/models/fbx/dancing.fbx"></model-fbx>
+                 src="static/models/fbx/tree_01.fbx"></model-fbx>
       <div class="example-loading" v-show="loading"></div>
     </template>
   </demo-block>
@@ -14,7 +14,7 @@ import ModelFbx from '../../src/model-fbx.vue';
 
 const code = `
 <template>
-    <model-obj src="static/models/fbx/dancing.fbx"></model-obj>
+    <model-obj src="static/models/fbx/tree_01.fbx"></model-obj>
 </template>
 
 <script>
@@ -31,7 +31,7 @@ const code = `
 const htmlCode = `
 <body>
     <div id="app">
-        <model-fbx src="static/models/fbx/dancing.fbx"></model-fbx>
+        <model-fbx src="static/models/fbx/tree_01.fbx"></model-fbx>
     </div>
     #scripts#
     <script>
